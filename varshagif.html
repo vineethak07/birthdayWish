@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./varsha gif.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>click on gift box</h1>
+    <div class="gift-box" id="giftBox">
+      <img src="gift for varsha.jpg" alt="Gift Box" id="giftImage">
+      
+      <div class="popup" id="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img src="varsha clip.jpg" alt="Popped Up Image">
+      </div>
+    </div>
+
+<script>
+const giftBox = document.getElementById('giftBox');
+const popup = document.getElementById('popup');
+
+giftBox.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+
+
+
+</script>
+</script>
+</body>
+</html>
